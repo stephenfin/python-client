@@ -27,46 +27,5 @@ if sys.argv[-1] == 'publish':
 
 
 setup(
-    name='coreapi',
     version=version,
-    url='https://github.com/core-api/python-client',
-    license='BSD',
-    description='Python client library for Core API.',
-    author='Tom Christie',
-    author_email='tom@tomchristie.com',
-    packages=find_packages('coreapi'),
-    include_package_data=True,
-    install_requires=[
-        'coreschema',
-        'requests',
-        'itypes',
-        'uritemplate'
-    ],
-    entry_points={
-        'coreapi.codecs': [
-            'corejson=coreapi.codecs:CoreJSONCodec',
-            'json=coreapi.codecs:JSONCodec',
-            'text=coreapi.codecs:TextCodec',
-            'download=coreapi.codecs:DownloadCodec',
-        ],
-        'coreapi.transports': [
-            'http=coreapi.transports:HTTPTransport',
-        ]
-    },
-    classifiers=[
-        'Development Status :: 3 - Alpha',
-        'Environment :: Web Environment',
-        'Intended Audience :: Developers',
-        'License :: OSI Approved :: BSD License',
-        'Operating System :: OS Independent',
-        'Programming Language :: Python',
-        'Programming Language :: Python :: 2',
-        'Programming Language :: Python :: 2.7',
-        'Programming Language :: Python :: 3',
-        'Programming Language :: Python :: 3.3',
-        'Programming Language :: Python :: 3.4',
-        'Programming Language :: Python :: 3.5',
-        'Programming Language :: Python :: 3.6',
-        'Topic :: Internet :: WWW/HTTP',
-    ]
 )
